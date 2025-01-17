@@ -1,1 +1,18 @@
+li a0, 10	00a00513	I-Type
+jal ra, 10588	34c000ef	J-Type
+ld s0, 8(sp)	00813083	I-Type
+ld s1, 16(sp)	01013403	I-Type
+addi sp, sp, 32	02010113	I-Type
+ret	00008067	I-Type
+addi sp, sp, -48	fd011113	I-Type
+ld a0, 0(a5)	00078503	I-Type
+sd a3, 8(sp)	00812e23	S-Type
+jal ra, 107a8	46f000ef	J-Type
+mv a0, sp	00050593	R-Type
+jal ra, 1018c	4d8000ef	J-Type
+li a3, 0	00000693	I-Type
+li a2, 0	00000613	I-Type
+ld t1, 24(sp)	01812283	I-Type
 
+
+These are 15 instructions from objectdump -O1 
